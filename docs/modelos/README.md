@@ -41,7 +41,7 @@ Los documentos Markdown utilizan enlaces relativos. Desde un archivo situado dir
 
 ## Uso de la plantilla base
 
-La plantilla base se conserva en `plantilla-modelo-casos-de-uso.md`. Para iniciar un modelo, copia su contenido en `modelo-casos-de-uso.md` y completa ese documento. El modelo del repositorio contiene el resultado revisado de E1: actores, casos, diagrama y respaldo en los requisitos. La revisión v1.5 descompone UC-08 en cinco casos. Las descripciones detalladas quedan pendientes.
+La plantilla base se conserva en `plantilla-modelo-casos-de-uso.md`. Para iniciar un modelo, copia su contenido en `modelo-casos-de-uso.md` y completa ese documento. El modelo del repositorio contiene el resultado revisado de E1: actores, casos, diagrama y respaldo en los requisitos. La revisión v1.5 descompuso UC-08 en cinco casos. La revisión v1.6 incorpora en el apartado 6 el esquema vacío de descripción, alineado con la plantilla base v1.6. Utiliza Precondiciones y Postcondiciones. Las descripciones detalladas quedan pendientes.
 
 La imagen de esta referencia se conserva como `imagenes/casos-de-uso-acceso-cuentas-ayuda-e1.png`. El nombre se utiliza también para el trabajo del alumnado. La vista de E2 sigue el mismo criterio: `casos-de-uso-salud-recetas-e2.png`.
 

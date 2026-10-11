@@ -2,7 +2,7 @@
 
 | Versión | Fecha | Estado |
 | --- | --- | --- |
-| 1.5 | 06/10/2026 | Plantilla |
+| 1.6 | 10/10/2026 | Plantilla |
 
 Esta es la plantilla base reutilizable. Conserva sus instrucciones y campos pendientes. Para iniciar el modelo, copia su contenido en [modelo-casos-de-uso.md](modelo-casos-de-uso.md). Si el modelo ya contiene resultados, continúa sobre él sin sustituirlos por la plantilla.
 
@@ -114,25 +114,25 @@ Repite el esquema siguiente para cada caso que se vaya a describir. Usa el ident
 
 **Identificador y nombre:** [Indica el caso.]
 
-**Estado de la descripción:** [Indica si es un resumen, una descripción esencial o una descripción detallada.]
+**Estado de la descripción:** [Indica el nivel de detalle y el alcance desarrollado.]
 
 **Objetivo:** [Explica qué resultado pretende obtener el participante.]
 
 **Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
 
-**Condiciones previas:** [Indica qué debe cumplirse antes de iniciar el caso.]
+**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
 
 **Inicio:** [Indica qué acción o suceso inicia el caso.]
 
 **Escenario principal:** [Describe la secuencia entre los participantes y el sistema.]
 
-**Alternativas y errores:** [Describe las variaciones conocidas y su resultado.]
+**Alternativas y errores:** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
 
-**Resultado:** [Indica qué queda establecido al terminar y qué ocurre si el objetivo no se alcanza.]
+**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
 
-**Reglas y NFR pertinentes:** [Remite a los requisitos que condicionan el comportamiento.]
+**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
 
-**Preguntas abiertas:** [Registra lo que aún falta por confirmar.]
+**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
 Describe el comportamiento que se necesita. Las decisiones sobre componentes, clases o tecnologías pertenecen al trabajo de arquitectura y diseño.
 

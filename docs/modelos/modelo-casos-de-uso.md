@@ -2,7 +2,7 @@
 
 | Versión | Fecha | Estado |
 | --- | --- | --- |
-| 1.5 | 07/10/2026 | Revisado |
+| 1.6 | 11/10/2026 | Revisado |
 
 **Iteración de referencia:** E1. Este documento recoge la primera vista revisada del modelo. Será el punto de partida para ampliarlo en E2.
 
@@ -145,6 +145,32 @@ NFR-003 y NFR-014 condicionan los idiomas de la interfaz. Los demás NFR pertine
 UC-31 a UC-35 disponen de un resumen de objetivo y participantes en el apartado 3. Sus descripciones detalladas quedan pendientes. La descomposición de UC-08 no exige desarrollarlas en esta revisión.
 
 Antes de completar los escenarios afectados, hay que aclarar los estados de las cuentas, las condiciones de aprobación y los efectos de la suspensión. También hay que aclarar el tratamiento de un fallo de envío y las condiciones de los enlaces de verificación y restablecimiento. Son preguntas pendientes del plan de E1. No se dan por resueltas en este documento.
+
+Repite el esquema siguiente para cada caso seleccionado. Conserva sus referencias y el alcance real de la descripción. El esquema permanece sin cumplimentar; no incorpora soluciones.
+
+### 6.1 Descripción de un caso
+
+**Identificador y nombre:** [Indica el caso.]
+
+**Estado de la descripción:** [Indica el nivel de detalle y el alcance desarrollado.]
+
+**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+
+**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+
+**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+
+**Inicio:** [Indica qué acción o suceso inicia el caso.]
+
+**Escenario principal:** [Describe la secuencia entre los participantes y el sistema.]
+
+**Alternativas y errores:** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+
+**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+
+**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
+
+**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
 
 ## 7 Continuidad entre iteraciones
 
