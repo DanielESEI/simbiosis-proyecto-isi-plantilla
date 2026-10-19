@@ -2,13 +2,27 @@
 
 | Versión | Fecha | Estado |
 | --- | --- | --- |
-| 2.2 | 10/10/2026 | Revisado |
+| 2.3 | 19/10/2026 | Revisado |
 
 **Iteración de referencia:** E2. Este documento recoge el modelo acumulado después de incorporar la vista de salud y recetas.
 
 **Plantilla base:** [Plantilla del modelo de casos de uso](plantilla-modelo-casos-de-uso.md). La plantilla se conserva sin cumplimentar. Los resultados del proyecto se incorporan a este documento.
 
 Los diagramas representan distintas vistas del mismo modelo. Los nombres de los actores y los identificadores de los casos de uso se mantienen entre iteraciones.
+
+## Índice
+
+- [1 Alcance del modelo](#1-alcance-del-modelo)
+- [2 Actores](#2-actores)
+- [3 Casos de uso](#3-casos-de-uso)
+- [4 Diagramas del modelo](#4-diagramas-del-modelo)
+  - [4.1 Vista de acceso, cuentas y ayuda de E1](#41-vista-de-acceso-cuentas-y-ayuda-de-e1)
+  - [4.2 Vista de salud y recetas de E2](#42-vista-de-salud-y-recetas-de-e2)
+- [5 Respaldo en los requisitos](#5-respaldo-en-los-requisitos)
+- [6 Descripciones de los casos de uso](#6-descripciones-de-los-casos-de-uso)
+  - [6.1 Descripción detallada UC-05 — Actualizar perfil](#61-descripción-detallada-uc-05--actualizar-perfil)
+  - [6.2 Descripción detallada UC-21 — Buscar recetas](#62-descripción-detallada-uc-21--buscar-recetas)
+- [7 Continuidad entre iteraciones](#7-continuidad-entre-iteraciones)
 
 ## 1 Alcance del modelo
 
@@ -193,31 +207,36 @@ NFR-002, NFR-003, NFR-008, NFR-009 y NFR-014 condicionan los datos, la recuperac
 
 ## 6 Descripciones de los casos de uso
 
-**Pendiente.** Los objetivos del apartado 3 no son descripciones detalladas. E2 exige precisar los escenarios necesarios para estudiar los riesgos de acceso autorizado, validación de recetas y filtrado por alergias, pero esas especificaciones se incorporarán cuando se complete el producto correspondiente.
+**Pendientes de redacción.** Los objetivos del apartado 3 no son descripciones detalladas. Los esquemas de UC-05 y UC-21 se mantienen sin cumplimentar para desarrollar sus recorridos; no contienen soluciones.
 
-Se mantiene el esquema de la [plantilla base](plantilla-modelo-casos-de-uso.md#6-descripciones-de-los-casos-de-uso). Esta revisión incorpora el resultado del modelado de actores y casos de uso; no declara completados los escenarios prioritarios, la arquitectura, el prototipo, las pruebas ni la evaluación de E2.
+**Acuerdos disponibles para los casos seleccionados.** Las siguientes actas, v1.1, contienen las aclaraciones aprobadas que complementan el catálogo:
 
-Siguen abiertas las preguntas de E1 sobre estados de las cuentas, condiciones de aprobación, efectos de la suspensión, fallos de envío y condiciones de los enlaces de verificación y restablecimiento.
+- [Acta de UC-05 · Actualizar perfil](../captura/acta-acuerdos-uc-05-actualizar-perfil.md): datos personales, de contacto y preferencias, validación, guardado, cancelación y fallo de guardado.
+- [Acta de UC-21 · Buscar recetas](../captura/acta-acuerdos-uc-21-buscar-recetas.md): búsqueda por ingredientes o texto, exclusiones y combinación de criterios, recetas visibles, resultados y detalle, datos ausentes en la presentación, búsqueda sin resultados y fallos de consulta.
 
-Antes de cerrar las descripciones afectadas, hay que aclarar:
+Las preguntas sobre esos comportamientos se resuelven consultando las actas. UC-05 no modifica datos de salud. La descripción seleccionada de UC-21 es parcial y no aplica automáticamente las alergias del perfil. Las demás funciones conservan sus requisitos y siguen pendientes de descripción.
 
+La consulta del detalle forma parte del recorrido de UC-21 conforme al [plan de E2, apartado 4.4](../planificacion/plan-iteracion-e2.md#44-búsqueda-y-consulta-de-recetas) y al acta de UC-21. Ese recorrido puede describirse con las fuentes disponibles; no depende de asignar un caso de uso independiente al detalle.
+
+**Preguntas pendientes fuera de los recorridos acordados.** Antes de desarrollar otras descripciones o escenarios afectados, habrá que aclarar:
+
+- Los detalles todavía no concretados de los estados y del proceso de aprobación de cuentas, los efectos de la suspensión, los fallos de envío y las condiciones de los enlaces de verificación y restablecimiento de E1.
 - Qué datos puede seleccionar el paciente para cada cuidador.
 - Cómo afecta la revocación de UC-16 a una sesión o consulta que ya estaba iniciada.
 - Qué respuesta recibe el paciente si falla el envío de la invitación de UC-11.
-- Qué visibilidad tiene una receta pendiente y qué ocurre al editar una receta validada.
-- Cómo se relacionan las alergias e intolerancias del perfil con los ingredientes de UC-21.
-- Qué se muestra cuando faltan datos del perfil o de la receta, o cuando no hay resultados.
-- Qué requisito respaldará de forma directa la consulta del detalle de una receta si se mantiene como capacidad independiente en una iteración posterior.
+- Qué visibilidad tienen las recetas pendientes fuera de las consultas acordadas en el acta de UC-21 y qué ocurre al editar una receta validada.
+- Cómo se relacionan las alergias e intolerancias del perfil con los ingredientes y qué respuesta se ofrece cuando faltan datos para aplicar ese filtrado.
+- Qué requisito respaldará de forma directa la consulta del detalle de una receta si se mantiene como capacidad independiente en una iteración posterior. El catálogo aún no contiene un FR específico para esa consulta.
 
-Las preguntas abiertas no modifican los requisitos. Las respuestas se registrarán con su procedencia antes de incorporarlas como reglas confirmadas.
+Estas preguntas no son un requisito previo para redactar UC-05 y el alcance seleccionado de UC-21. Las preguntas abiertas no modifican los requisitos. Las respuestas futuras se registrarán con su procedencia antes de incorporarlas como reglas confirmadas.
 
-Repite el esquema siguiente para cada caso seleccionado. Conserva sus referencias y el alcance real de la descripción. El esquema permanece sin cumplimentar; no incorpora soluciones.
+Se conserva el esquema de la [plantilla base](plantilla-modelo-casos-de-uso.md#6-descripciones-de-los-casos-de-uso). Este modelo no declara completados los demás escenarios prioritarios, la arquitectura, el prototipo, las pruebas ni la evaluación de E2.
 
-### 6.1 Descripción de un caso
+Los apartados 6.1 y 6.2 presentan el esquema sin cumplimentar para UC-05 y UC-21. Conserva las referencias y el alcance real de cada descripción al desarrollarla; estos apartados no incorporan soluciones.
 
-**Identificador y nombre:** [Indica el caso.]
+### 6.1 Descripción detallada UC-05 — Actualizar perfil
 
-**Estado de la descripción:** [Indica el nivel de detalle y el alcance desarrollado.]
+**Identificador y nombre del caso de uso:** [Indica el caso.]
 
 **Objetivo:** [Explica qué resultado pretende obtener el participante.]
 
@@ -227,9 +246,31 @@ Repite el esquema siguiente para cada caso seleccionado. Conserva sus referencia
 
 **Inicio:** [Indica qué acción o suceso inicia el caso.]
 
-**Escenario principal:** [Describe la secuencia entre los participantes y el sistema.]
+**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
 
-**Alternativas y errores:** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
+
+**Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
+
+**Reglas y NFR pertinentes:** [Remite a los requisitos y actas que condicionan el comportamiento.]
+
+**Preguntas abiertas:** [Registra solo las cuestiones necesarias que las fuentes no resuelvan. Si no hay preguntas para el alcance descrito, indícalo.]
+
+### 6.2 Descripción detallada UC-21 — Buscar recetas
+
+**Identificador y nombre del caso de uso:** [Indica el caso.]
+
+**Objetivo:** [Explica qué resultado pretende obtener el participante.]
+
+**Participantes:** [Indica el actor principal y los actores de apoyo, si los hay.]
+
+**Precondiciones:** [Indica qué se da por cumplido al comenzar. Las comprobaciones que realiza el sistema pertenecen al flujo.]
+
+**Inicio:** [Indica qué acción o suceso inicia el caso.]
+
+**Escenario principal de éxito:** [Describe la secuencia entre los participantes y el sistema.]
+
+**Extensiones (flujos alternativos):** [Vincula cada variación a un paso. Indica cómo continúa o termina.]
 
 **Postcondiciones:** [Indica qué queda establecido con éxito y qué se conserva o cambia si el caso termina sin éxito o se cancela. Una consulta no requiere modificar datos para alcanzar su objetivo.]
 
