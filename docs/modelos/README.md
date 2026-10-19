@@ -41,9 +41,9 @@ Los documentos Markdown utilizan enlaces relativos. Desde un archivo situado dir
 
 ## Uso de la plantilla base
 
-La plantilla base se conserva en `plantilla-modelo-casos-de-uso.md`. Para iniciar un modelo, copia su contenido en `modelo-casos-de-uso.md` y completa ese documento. El modelo del repositorio contiene el resultado acumulado del modelado de actores y casos de uso de E1 y E2, con sus diagramas y respaldo en los requisitos. La versión vigente es v2.3. Las descripciones detalladas quedan pendientes de redacción. El apartado 6 enlaza las actas aprobadas de UC-05 y UC-21 y distingue sus acuerdos de las preguntas abiertas de otros recorridos.
+La plantilla base se conserva en `plantilla-modelo-casos-de-uso.md`. Para iniciar un modelo, copia su contenido en `modelo-casos-de-uso.md` y completa ese documento. El modelo del repositorio contiene el resultado acumulado del modelado de actores y casos de uso de E1 y E2, con sus diagramas y respaldo en los requisitos. La versión vigente es v2.4. Las descripciones detalladas de UC-05 y UC-21 están pendientes de especificación. El apartado 6 enlaza las actas aprobadas de UC-05 y UC-21 y delimita el alcance de sus descripciones.
 
-La vista de E1 se conserva como `imagenes/casos-de-uso-acceso-cuentas-ayuda-e1.png`. La vista de E2 se conserva como `imagenes/casos-de-uso-salud-recetas-e2.png`. Estos nombres se utilizan también para el trabajo del alumnado.
+La vista de E1 se conserva como `imagenes/casos-de-uso-acceso-cuentas-ayuda-e1.png`. La vista de E2 se conserva como `imagenes/casos-de-uso-salud-recetas-e2.png`.
 
 Una vez iniciado el modelado, continúa sobre el documento de trabajo. No vuelvas a copiar la plantilla sobre un modelo que ya contiene resultados. Consulta la plantilla cuando necesites sus instrucciones o el esquema de un apartado. Las mejoras de la estructura o las instrucciones se realizan en la plantilla; los actores, casos, diagramas y resultados del proyecto se incorporan al modelo.
 
@@ -61,4 +61,4 @@ Si se declara una línea base formal, se identifica mediante una etiqueta de Git
 
 ## Esquema de las descripciones
 
-La plantilla base v1.6 y el apartado 6 del modelo acumulado E2 v2.3 comparten el esquema de descripción. Utilizan Precondiciones y Postcondiciones. El esquema permanece sin cumplimentar; las soluciones detalladas se incorporarán cuando se prepare su publicación.
+La plantilla base v1.6 y el apartado 6 del modelo acumulado E2 v2.4 comparten el esquema de descripción. Utilizan Precondiciones y Postcondiciones. El estado y el alcance de las descripciones detalladas se registran en el modelo.

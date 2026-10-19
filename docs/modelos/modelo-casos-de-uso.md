@@ -2,7 +2,7 @@
 
 | Versión | Fecha | Estado |
 | --- | --- | --- |
-| 2.3 | 19/10/2026 | Revisado |
+| 2.4 | 19/10/2026 | Revisado |
 
 **Iteración de referencia:** E2. Este documento recoge el modelo acumulado después de incorporar la vista de salud y recetas.
 
@@ -207,32 +207,19 @@ NFR-002, NFR-003, NFR-008, NFR-009 y NFR-014 condicionan los datos, la recuperac
 
 ## 6 Descripciones de los casos de uso
 
-**Pendientes de redacción.** Los objetivos del apartado 3 no son descripciones detalladas. Los esquemas de UC-05 y UC-21 se mantienen sin cumplimentar para desarrollar sus recorridos; no contienen soluciones.
+**Estado de la especificación.** Las descripciones detalladas de UC-05 y UC-21 están pendientes de elaboración. Las actas aprobadas definen el comportamiento acordado y delimitan el alcance de estas descripciones.
 
-**Acuerdos disponibles para los casos seleccionados.** Las siguientes actas, v1.1, contienen las aclaraciones aprobadas que complementan el catálogo:
+**Alcance de las descripciones.** Las actas aprobadas de UC-05 y UC-21, v1.1, complementan el catálogo y concretan el siguiente alcance:
 
-- [Acta de UC-05 · Actualizar perfil](../captura/acta-acuerdos-uc-05-actualizar-perfil.md): datos personales, de contacto y preferencias, validación, guardado, cancelación y fallo de guardado.
-- [Acta de UC-21 · Buscar recetas](../captura/acta-acuerdos-uc-21-buscar-recetas.md): búsqueda por ingredientes o texto, exclusiones y combinación de criterios, recetas visibles, resultados y detalle, datos ausentes en la presentación, búsqueda sin resultados y fallos de consulta.
+UC-05 Actualizar perfil incluye la consulta y actualización de los datos personales, de contacto y de las preferencias dietéticas del perfil propio. El [acta de UC-05](../captura/acta-acuerdos-uc-05-actualizar-perfil.md) define los campos editables, la validación, el guardado, la cancelación y la respuesta ante fallos.
 
-Las preguntas sobre esos comportamientos se resuelven consultando las actas. UC-05 no modifica datos de salud. La descripción seleccionada de UC-21 es parcial y no aplica automáticamente las alergias del perfil. Las demás funciones conservan sus requisitos y siguen pendientes de descripción.
+UC-21 Buscar recetas incluye la búsqueda de recetas, la presentación de resultados y la consulta del detalle de una receta seleccionada entre esos resultados. Este alcance está definido en el [plan de E2, apartado 4.4](../planificacion/plan-iteracion-e2.md#44-búsqueda-y-consulta-de-recetas) y en el [acta de UC-21](../captura/acta-acuerdos-uc-21-buscar-recetas.md).
 
-La consulta del detalle forma parte del recorrido de UC-21 conforme al [plan de E2, apartado 4.4](../planificacion/plan-iteracion-e2.md#44-búsqueda-y-consulta-de-recetas) y al acta de UC-21. Ese recorrido puede describirse con las fuentes disponibles; no depende de asignar un caso de uso independiente al detalle.
+Las actas constituyen la referencia para especificar esos comportamientos. UC-05 no modifica datos de salud. La descripción seleccionada de UC-21 es parcial y no aplica automáticamente las alergias del perfil. Las demás funciones conservan sus requisitos y siguen pendientes de descripción.
 
-**Preguntas pendientes fuera de los recorridos acordados.** Antes de desarrollar otras descripciones o escenarios afectados, habrá que aclarar:
+Las descripciones de UC-05 y UC-21 se limitan al comportamiento definido en sus actas aprobadas y siguen la estructura de la [plantilla base](plantilla-modelo-casos-de-uso.md#6-descripciones-de-los-casos-de-uso).
 
-- Los detalles todavía no concretados de los estados y del proceso de aprobación de cuentas, los efectos de la suspensión, los fallos de envío y las condiciones de los enlaces de verificación y restablecimiento de E1.
-- Qué datos puede seleccionar el paciente para cada cuidador.
-- Cómo afecta la revocación de UC-16 a una sesión o consulta que ya estaba iniciada.
-- Qué respuesta recibe el paciente si falla el envío de la invitación de UC-11.
-- Qué visibilidad tienen las recetas pendientes fuera de las consultas acordadas en el acta de UC-21 y qué ocurre al editar una receta validada.
-- Cómo se relacionan las alergias e intolerancias del perfil con los ingredientes y qué respuesta se ofrece cuando faltan datos para aplicar ese filtrado.
-- Qué requisito respaldará de forma directa la consulta del detalle de una receta si se mantiene como capacidad independiente en una iteración posterior. El catálogo aún no contiene un FR específico para esa consulta.
-
-Estas preguntas no son un requisito previo para redactar UC-05 y el alcance seleccionado de UC-21. Las preguntas abiertas no modifican los requisitos. Las respuestas futuras se registrarán con su procedencia antes de incorporarlas como reglas confirmadas.
-
-Se conserva el esquema de la [plantilla base](plantilla-modelo-casos-de-uso.md#6-descripciones-de-los-casos-de-uso). Este modelo no declara completados los demás escenarios prioritarios, la arquitectura, el prototipo, las pruebas ni la evaluación de E2.
-
-Los apartados 6.1 y 6.2 presentan el esquema sin cumplimentar para UC-05 y UC-21. Conserva las referencias y el alcance real de cada descripción al desarrollarla; estos apartados no incorporan soluciones.
+Los apartados 6.1 y 6.2 corresponden a las descripciones detalladas de UC-05 y UC-21.
 
 ### 6.1 Descripción detallada UC-05 — Actualizar perfil
 
