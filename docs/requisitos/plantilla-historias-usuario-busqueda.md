@@ -3,8 +3,6 @@
 | Campo | Valor |
 | --- | --- |
 | Proyecto | Proyecto Simbiosis |
-| Estudiante | [Nombre] |
-| Grupo | [ISI_n] |
 | Fecha | [dd/mm/aaaa] |
 | Versión | [Versión de trabajo] |
 | Estado | Borrador |
@@ -17,15 +15,13 @@
 
 ## Épica de búsqueda
 
-Una épica expresa una necesidad amplia que se descompone en historias con valor propio.
-
 Como [rol], quiero [capacidad amplia], para [beneficio].
 
-**Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta. No cuenta como una cuarta historia de la entrega.
+**Estado:** descompuesta en US-01, US-02 y US-03. Conserva la necesidad conjunta.
 
 ## Justificación de la división
 
-[Escribir dos frases que expliquen los resultados útiles que separa la división.]
+[Justificación de los resultados útiles que separa la división.]
 
 ## US-01
 
@@ -69,14 +65,19 @@ Como [rol], quiero [capacidad], para [beneficio].
 - **CA-02.** Dado [situación], cuando [acción], entonces [resultado observable].
 - **CA-03.** Dado [situación], cuando [acción], entonces [resultado observable].
 
-## Mejora tras la revisión INVEST
+## Revisión INVEST
 
-[Indicar la mejora principal y su motivo. Si se mantiene la redacción, justificar una decisión concreta.]
+La revisión abarca US-01, US-02 y US-03. «Aplicado» indica si se ha realizado la comprobación. «Cumple» indica si todas las historias cumplen el criterio. Si alguna no lo cumple, indicar «No» e identificar la historia y el motivo en la justificación. Si no se ha realizado la comprobación o faltan datos, indicar «Pendiente» en «Cumple».
+
+| Criterio | Pregunta de revisión | Aplicado | Cumple | Justificación |
+| --- | --- | --- | --- | --- |
+| Independiente | ¿Puede implementarse cada historia y ofrecer un resultado útil sin implementar antes las otras historias del conjunto? Puede compartir infraestructura con ellas. | [Sí/No] | [Sí/No/Pendiente] | [Historias y motivo] |
+| Negociable | ¿Cada historia explica qué necesita la persona y deja margen para discutir los detalles de la solución, respetando los acuerdos confirmados? | [Sí/No] | [Sí/No/Pendiente] | [Historias y motivo] |
+| Valiosa | ¿La parte «para…» de cada historia explica el beneficio que obtiene la persona al usar esa capacidad? | [Sí/No] | [Sí/No/Pendiente] | [Historias y motivo] |
+| Estimable | ¿Están claros el alcance y los datos necesarios para estimar el trabajo de cada historia? | [Sí/No] | [Sí/No/Pendiente] | [Historias y motivo] |
+| Pequeña | ¿Se centra cada historia en una única capacidad de alcance manejable? | [Sí/No] | [Sí/No/Pendiente] | [Historias y motivo] |
+| Comprobable | ¿Los criterios de aceptación de cada historia describen acciones y resultados observables que permiten distinguir un comportamiento correcto de uno incorrecto? | [Sí/No] | [Sí/No/Pendiente] | [Historias y motivo] |
 
 ## Dudas pendientes
 
-[Indicar una duda real si queda algún criterio incompleto. Si no hay dudas, escribir «Ninguna».]
-
-## Declaración de uso de IA
-
-No he utilizado IA.
+[Cuestiones pendientes de aclaración. Si no quedan cuestiones, indicar «Ninguna».]
